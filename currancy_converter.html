@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="currency_converter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Currency Converter</h1>
+
+        <div class="amount">
+          <label for="inputamount">Enter amount</label>
+          <input id="inputamount" type="text" placeholder="enter amount" />
+        </div>
+
+        <div class="dropdown">
+          <div class="from">
+            <p>FROM</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/flat/64.png" alt="" />
+              <select name="from"></select>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-right-left"></i>
+
+          <div class="to">
+            <p>TO</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="" />
+              <select name="to"></select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">
+          <p>1USD = 80INR</p>
+        </div>
+
+        <button id="btn">Get Exchange Rate</button>
+      </form>
+    </div>
+    <script src="countrylist.js"></script>
+    <!--jisko aage accesss karna he us js file ko upar rkho-->
+    <script src="currancy_converter.js"></script>
+  </body>
+</html>
